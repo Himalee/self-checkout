@@ -6,7 +6,8 @@ class Checkout
   end
 
   def calculate_tax
-    tax_rate = @tax / 100
+    formulate_tax_rate = 100
+    tax_rate = @tax / formulate_tax_rate
     total_tax = @basket.sub_total * tax_rate
     ('%.2f' % total_tax).to_f
   end

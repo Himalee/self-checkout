@@ -3,7 +3,7 @@ require "item"
 require "basket"
 
 describe Checkout do
-  # let{:apple} {Item.new('apple', 1)}}
+  
   # subject{:checkout} {described_class.new()}
 
   before(:each) do
