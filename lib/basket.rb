@@ -1,6 +1,6 @@
 class Basket
 
-  attr_reader :items
+  attr_reader :items, :sub_total
 
   def initialize
     @items = []
@@ -12,6 +12,6 @@ class Basket
 
   def sub_total
     total = @items.map {|item| item.price}
-    ('%.2f' % total.sum).to_f
+    total.sum.to_f
   end
 end

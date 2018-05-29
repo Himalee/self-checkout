@@ -3,7 +3,7 @@ require "item"
 require "basket"
 
 describe Checkout do
-  
+
   # subject{:checkout} {described_class.new()}
 
   before(:each) do
@@ -19,7 +19,7 @@ describe Checkout do
     expect(@checkout.calculate_tax).to eql(0.60)
   end
 
-  it "includes finds the total including tax" do
+  it "finds the total including tax" do
     expect(@checkout.calculate_total).to eql(3.60)
   end
 end
